@@ -1,0 +1,318 @@
+/* You can add custom CSS and extend Boostrap styles in this file. Remember, Bootstrap is just CSS at the end of the day! */
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bar {
+position: fixed;
+  top:0%;
+  width: 100%;
+}
+.container-fluid {
+  /* position: fixed;
+  top:0%; */
+  display: flex;
+  align-content: end;
+}
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+.navbarNav {
+   /* position: fixed;
+  top:0%; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.navbar-nav .nav-link {
+  padding: 15px 25px !important;
+}
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  scroll-behavior: smooth;
+}
+
+#hero-section {
+  /* flex: 1; Take up available space */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/heroImage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  border radius:25px;
+  color: white;
+}
+
+.hero-content h1 {
+  margin-bottom: 15px; /* Add some spacing between the elements */
+}
+
+.hero-content p {
+  font-size: 1.2rem; /* Adjust the font size */
+}
+
+.hero-image {
+  /* background-image: url("img/heroImage.png"); */
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+/* #mission-section {
+  flex: 1;
+  display: flex;
+  background-image: url();
+} */
+
+#footer-section {
+  background-color: #2c2c2c;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+#footer-section p {
+  margin: 0;
+}
+
+#mission-section {
+  /* flex: 0.5; */
+  /* margin: 20px;
+  padding: 20px; */
+  display: flex;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 70vh;
+  align-items: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.mission-text {
+  padding: 40px;
+  border: #e73c7e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr); /* 3 columns */
+  gap: 20px; /* Space between icons */
+  text-align: center; /* Center the icons */
+  height: 40vh;
+  background-color: aliceblue;
+}
+
+.icons{
+  margin-bottom: 50px;
+ display: grid;
+ align-items: center;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 40px; 
+  height: 30vh;
+}
+
+/* Individual icon styles */
+/* .html-icon div {
+  margin: 20px 0; /* Add vertical space between icons 
+} */
+
+ .html-icon i {
+  display: flex;
+  justify-content: center;
+  font-size: 120px; 
+  height: 50px;
+  color: #555; /* Default icon color */
+  transition: transform 0.3s, color 0.3s; /* Smooth hover effect */
+} 
+
+ .html-icon i:hover {
+  transform: scale(1.5);
+  color: #007bff; 
+}
+
+.java-icon i {
+  display: flex;
+  justify-content: center;
+  font-size: 120px; Increase icon size
+  height: 50px;
+  color: #555; /* Default icon color */
+  transition: transform 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.java-icon i:hover {
+  transform: scale(1.5); /* Slight zoom effect */
+  color: #007bff; /* Change color on hover */
+}
+
+.python-icon i {
+  display: flex;
+  justify-content: center;
+  font-size: 120px; /* Increase icon size */
+  height: 50px;
+  color: #555; /* Default icon color */
+  transition: transform 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.python-icon i:hover {
+  transform: scale(1.5); /* Slight zoom effect */
+  color: #007bff; /* Change color on hover */
+}
+
+.database-icon i {
+  display: flex;
+  justify-content: center;
+  font-size: 120px; 
+  height: 50px;
+  color: #555; 
+  transition: transform 0.3s, color 0.3s; 
+}
+
+/* Hover effect */
+.database-icon i:hover {
+  transform: scale(1.5);
+  color: #007bff; 
+} 
+
+#contact-section{
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #f0f0f0, #e6e6e6); /* Subtle gradient background */
+  padding: 20px;
+}
+
+.contact-me {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-me h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-me label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contact-me input, 
+.contact-me textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-me button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-me button:hover {
+  background-color: #0056b3;
+}
+.contact-icons{
+  margin-bottom: 30px;
+  display: grid;
+  align-items: center;
+   grid-template-columns: repeat(3, 1fr); 
+   gap: 40px; 
+   height: 20vh;
+}
+
+.Linkedin i {
+  display: flex;
+  justify-content: center;
+  font-size: 100px; 
+  height: 50px;
+  color: #555; 
+  transition: transform 0.3s, color 0.3s; 
+}
+
+.Linkedin i:hover {
+  transform: scale(1.5);
+  color: black; 
+} 
+
+.HS {
+  display: flex;
+  justify-content: center;
+  font-size: 100px; 
+  height: 50px;
+  color: #555; 
+  transition: transform 0.3s, color 0.3s; 
+}
+
+.HS i:hover {
+  transform: scale(1.5);
+  color: black; 
+} 
+.GIT i{
+  display: flex;
+  justify-content: center;
+  font-size: 100px; 
+  height: 50px;
+  color: #555; 
+  transition: transform 0.3s, color 0.3s; 
+}
+.GIT i:hover{
+  transform: scale(1.5);
+  color: black; 
+}
